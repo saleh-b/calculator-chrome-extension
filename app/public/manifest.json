@@ -6,6 +6,8 @@
     "default_popup": "index.html"
   },
   "icons": {
+    "16": "calculator.svg",
+    "48": "calculator.svg",
     "128": "calculator.svg"
   }
 }
