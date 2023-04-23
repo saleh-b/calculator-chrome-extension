@@ -13,7 +13,7 @@ const equationSlice = createSlice({
         state.equation = state.equation + action.payload;
       }
     },
-    calculate: (state, action) => {
+    calculate: (state) => {
       const str = state.equation;
       state.equation = state.equation + '=' + eval(str);
     },

@@ -63,7 +63,7 @@ function Keyboard() {
           </Grid>
         ))}
         <Grid item xs={3}>
-          <Button onClick={() => dispatchFn(calculate('calculate'))} fullWidth size='large' variant='contained'>
+          <Button onClick={() => dispatchFn(calculate())} fullWidth size='large' variant='contained'>
             =
           </Button>
         </Grid>

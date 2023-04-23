@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "manifest_version": 3,
   "action": {
+    "default_icon": "calculator.svg",
     "default_popup": "index.html"
   },
   "icons": {
