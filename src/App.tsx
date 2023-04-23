@@ -1,4 +1,3 @@
-import './App.css';
 import Dipslay from './components/Dipslay';
 import Keyboard from './components/Keyboard';
 

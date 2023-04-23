@@ -7,11 +7,15 @@ const equationSlice = createSlice({
   initialState,
   reducers: {
     write: (state, action) => {
-      state.equation + ' ' + action.payload;
+      if (action.payload === 'C') {
+        state.equation = '';
+      } else {
+        state.equation = state.equation + action.payload;
+      }
     },
     calculate: (state, action) => {
-      const str = state.equation.replace(/[^-()\d/*+.]/g, '');
-      console.log(eval(str));
+      const str = state.equation;
+      state.equation = state.equation + '=' + eval(str);
     },
   },
 });

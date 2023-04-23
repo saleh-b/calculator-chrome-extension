@@ -1,12 +1,12 @@
 import { TextField, Box } from '@mui/material';
 import { useSelector } from 'react-redux/es/exports';
+import { RootState } from '../store';
 
 function Dipslay() {
-  const { equation } = useSelector((state) => state.equation);
-  console.log(equation);
+  const { equation } = useSelector((state: RootState) => state.equation);
   return (
     <Box sx={{ marginBottom: '20px' }}>
-      <TextField fullWidth type='number' disabled></TextField>
+      <TextField value={equation} sx={{ input: { color: '#fff' } }} fullWidth disabled />
     </Box>
   );
 }
