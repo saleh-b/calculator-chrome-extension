@@ -1,14 +1,14 @@
 {
-  "name": "TVRC",
+  "name": "CALC JS",
   "version": "1.0.0",
   "manifest_version": 3,
   "action": {
-    "default_icon": "calculator.svg",
+    "default_icon": "./calculator.png",
     "default_popup": "index.html"
   },
   "icons": {
-    "16": "calculator.svg",
-    "48": "calculator.svg",
-    "128": "calculator.svg"
+    "16": "./calculator.png",
+    "48": "./calculator.png",
+    "128": "./calculator.png"
   }
 }

@@ -1,4 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
+import { evaluate } from 'mathjs';
 
 const initialState = { equation: '' };
 
@@ -15,7 +16,7 @@ const equationSlice = createSlice({
     },
     calculate: (state) => {
       const str = state.equation;
-      state.equation = state.equation + '=' + eval(str);
+      state.equation = state.equation + '=' + evaluate(str);
     },
   },
 });
